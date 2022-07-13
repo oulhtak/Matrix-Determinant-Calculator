@@ -64,14 +64,14 @@ return det;
 }
 int main(){
 int **M,n;
-printf("Donner lordre de votre matrice: ");
+printf("What is your matrix level (enter any intiger >= 2 ): ");
 scanf("%d",&n);
 M=alloc_tab2d(n);
-printf("\nDonner les elements de la matrice est:\n");
+printf("\nEnter the value of your matrix one by one:\n");
 give(M,n);
-printf("\nvotre matrice est:\n");
+printf("\nYour matrix is :\n");
 show(M,n);
-printf("\nle det est %d",det_mat(M,n));
+printf("\nThe determinant is %d",det_mat(M,n));
 
 return 0;
 
